@@ -1,0 +1,12 @@
+/* Structure */
+table {
+  width: 80%;
+  /* align-self: center; */
+  margin-left: 4em;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 90%;
+  margin-left: 3em;
+}
