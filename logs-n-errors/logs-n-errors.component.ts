@@ -163,13 +163,15 @@ const apiData = [
 
 function populatingElementData() {
   let returnElementData: PeriodicElement[] = [];
+  let count = 0;
   for (let dataItem of apiData) {
+    count++;
     let tempArr = [];
     for (let itemDetail of dataItem.TransactionDetails) {
       tempArr.push(itemDetail.TransactionState);
     }
     returnElementData.push({
-      position: 1,
+      position: count,
       userid: dataItem.UserId,
       transactionState: tempArr,
       transactionId: dataItem.TransactionId,

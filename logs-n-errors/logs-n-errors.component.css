@@ -3,10 +3,21 @@ table {
   width: 80%;
   /* align-self: center; */
   margin-left: 4em;
+  /* text-align: justify; */
 }
+
+/* th {
+  text-align: right;
+} */
 
 .mat-form-field {
   font-size: 14px;
   width: 90%;
   margin-left: 3em;
+}
+
+.drop-down {
+  margin: 5px 2em 5px 0;
+  min-width: 7rem;
+  /* max-width: 7rem; */
 }

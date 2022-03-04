@@ -30,17 +30,23 @@
         <ng-container matColumnDef="transactionState">
           <th mat-header-cell *matHeaderCellDef>Transaction-State</th>
           <td mat-cell *matCellDef="let element">
-            <div *ngFor="let status of element.transactionState">
-              {{ status }}
-              <mat-icon
-                class="mat-icon-rtl-mirror"
-                svgIcon="thumb-up"
-              ></mat-icon>
-              <i class="fa fa-check-circle"></i>
-              <!-- <i class="fa-solid fa-loader"></i> -->
-
-              <!-- <i class="fa fa-times-circle"></i> -->
+            <div class="drop-down">
+              <mat-accordion>
+                <mat-expansion-panel hideToggle>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title> States </mat-panel-title>
+                    <mat-panel-description> summary </mat-panel-description>
+                  </mat-expansion-panel-header>
+                  <p *ngFor="let status of element.transactionState">
+                    {{ status }}
+                  </p>
+                </mat-expansion-panel>
+              </mat-accordion>
             </div>
+
+            <!-- <div *ngFor="let status of element.transactionState">
+              {{ status }}
+            </div> -->
 
             <!-- {{ element.transactionState }} -->
           </td>
